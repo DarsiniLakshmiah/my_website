@@ -113,7 +113,14 @@
                             <i class="fas fa-graduation-cap"></i>
                             <div>
                                 <h4>M.S. Data Science - GWU</h4>
-                                <p>George Washington University · Graduating May 2026</p>
+                                <p>George Washington University · GPA 3.97/4.0 · May 2026</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h4>B.S. Mathematics - MCC</h4>
+                                <p>Madras Christian College · CGPA 8.50/10 · May 2021</p>
                             </div>
                         </div>
                         <div class="highlight-card">
@@ -167,13 +174,13 @@
                             <span class="timeline-date">Sep 2025 – March 2026</span>
                         </div>
                         <ul class="timeline-bullets">
-                            <li>Reduced manual campaign operations by ~25% by automating ~30 recurring marketing campaigns (previously in SAS) using n8n workflows integrated with Databricks, PySpark, and Redshift APIs.</li>
-                            <li>Developed a LightGBM-based recommendation model on millions of user interaction records from S3 and Redshift, improving campaign targeting and increasing user engagement by ~10%.</li>
-                            <li>Built an interactive marketing analytics dashboard in Databricks and Redshift to monitor campaign KPIs (open rates, CTR, engagement trends).</li>
-                            <li>Developed a LLaMA-powered analytics assistant integrated with Databricks and Redshift, enabling natural language queries and reducing analytics turnaround time by ~50%.</li>
+                            <li>Cut analytics turnaround 50% by shipping a production RAG NL-to-SQL assistant (LangChain, ChromaDB, Databricks) with schema-aware prompt engineering and query validation — marketing teams moved from filing data tickets to self-serving campaign insights in natural language within two weeks of launch.</li>
+                            <li>Lifted campaign engagement ~10% by building a LightGBM recommendation system on 76M+ behavioral records — measured via CTR, content consumption rate, and downstream engagement metrics; tracked model versions, feature importance, and precision/recall with MLflow.</li>
+                            <li>Drove self-service analytics adoption by training marketing and CRM teams on the NL-to-SQL assistant, significantly reducing recurring analyst data requests within the first month of deployment.</li>
+                            <li>Standardized the team's data foundation by authoring dbt pipelines on Databricks with lineage tracking, quality tests, and governed transformations — eliminating ad-hoc query inconsistencies across marketing and CRM reporting.</li>
                         </ul>
                         <div class="timeline-tags">
-                            <span class="tag">Python</span><span class="tag">PySpark</span><span class="tag">Databricks</span><span class="tag">LightGBM</span><span class="tag">LLaMA</span><span class="tag">Redshift</span><span class="tag">n8n</span>
+                            <span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">ChromaDB</span><span class="tag">LightGBM</span><span class="tag">MLflow</span><span class="tag">Databricks</span><span class="tag">dbt</span>
                         </div>
                     </div>
                 </div>
@@ -190,13 +197,13 @@
                             <span class="timeline-date">May 2025 – Aug 2025</span>
                         </div>
                         <ul class="timeline-bullets">
-                            <li>Enabled data-driven decisions for a $200M multi-banner grocery retail initiative by building a unified Customer Behavioral Analytics platform integrating Amazon Fresh and Whole Foods data using QuickSight and SQL.</li>
-                            <li>Built a purchase-propensity prediction model using Python, SQL, and Amazon SageMaker, integrated into dashboards used by product and retail teams to evaluate feature launches.</li>
-                            <li>Reduced analytics latency by ~20% by engineering scalable ETL pipelines with AWS Glue, Athena, S3, and Redshift across millions of transactions.</li>
-                            <li>Delivered insights on Dash Cart and Click-Checkout adoption by building operational performance dashboards; presented findings to PMs, Data Scientists, and retail operations stakeholders.</li>
+                            <li>Built a customer 360 analytics platform for a $200M Amazon Fresh + Whole Foods initiative, unifying 87M+ transactions across 530+ stores to surface lifetime value, purchasing patterns, and high-value customer segments; product managers used the dashboard to evaluate Dash Cart and Click-Checkout adoption patterns and prioritize retail experimentation.</li>
+                            <li>Developed a purchase-propensity model — engineered features on purchase frequency, basket size, and browsing history; validated model performance and integrated predictions into retail dashboards guiding feature launch decisions.</li>
+                            <li>Influenced Amazon Fresh + Whole Foods in-store strategy by presenting store-level Dash Cart and Click-Checkout adoption analysis to PMs and retail leadership — findings directly shaped the integrated rollout roadmap.</li>
+                            <li>Reduced dashboard latency by 20% by rebuilding ETL pipelines to transform raw transactions into optimized aggregation layers for scalable retail analytics.</li>
                         </ul>
                         <div class="timeline-tags">
-                            <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">SageMaker</span><span class="tag">AWS Glue</span><span class="tag">Redshift</span><span class="tag">QuickSight</span><span class="tag">Athena</span>
+                            <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">QuickSight</span><span class="tag">AWS Glue</span><span class="tag">Redshift</span><span class="tag">Athena</span>
                         </div>
                     </div>
                 </div>
@@ -234,13 +241,12 @@
                             <span class="timeline-date">Aug 2021 – Jun 2024</span>
                         </div>
                         <ul class="timeline-bullets">
-                            <li>Built distributed ETL pipelines and Redshift data models using AWS EMR (Spark, PySpark, Airflow) processing 1.5M+ daily banking transactions, improving analytics query performance by ~35%.</li>
-                            <li>Developed NLP-driven anomaly detection models using TF-IDF and XGBoost, strengthening enterprise AML and fraud monitoring across UK and EMEA operations.</li>
-                            <li>Conducted A/B experimentation using Python (statsmodels) and SQL to evaluate personalized digital marketing campaigns, increasing engagement across UK banking segments by ~9%.</li>
-                            <li>Built analytics dashboards used by product and risk teams to monitor digital banking performance, campaign effectiveness, and customer activity across multiple channels.</li>
+                            <li>Improved query performance 35% — engineered ETL pipelines (Azure Data Factory, Snowflake, ADLS Gen2) processing 1.5M+ daily banking transactions across card payments, ACH, and digital activity streams; optimized Snowflake schemas and KPI layers for product, risk, and compliance teams.</li>
+                            <li>Strengthened AML monitoring — built NLP anomaly detection (TF-IDF + XGBoost) on 1.5M+ daily transactions; partnered with compliance investigators, performed feature selection and hyperparameter tuning, delivered explainable risk scoring with feature importance reports and Power BI dashboards for investigator prioritization.</li>
+                            <li>Drove 9% campaign uplift — built customer segmentation models and A/B experiments (Python, Snowflake, statsmodels); translated clustering outputs into recommendations on segment response rates, revenue opportunity, and compliance considerations — influencing leadership to adopt personalized targeting strategies.</li>
                         </ul>
                         <div class="timeline-tags">
-                            <span class="tag">Python</span><span class="tag">PySpark</span><span class="tag">XGBoost</span><span class="tag">AWS EMR</span><span class="tag">Airflow</span><span class="tag">SQL</span><span class="tag">NLP</span>
+                            <span class="tag">Python</span><span class="tag">Azure Data Factory</span><span class="tag">Snowflake</span><span class="tag">ADLS Gen2</span><span class="tag">XGBoost</span><span class="tag">SQL</span><span class="tag">NLP</span>
                         </div>
                     </div>
                 </div>
@@ -348,7 +354,7 @@
                         </div>
                         <span class="project-category-badge ai-llm">AI & LLM</span>
                         <h3 class="project-title">NutriNav</h3>
-                        <p class="project-desc">AI-powered bilingual meal planning assistant for DC food desert residents. Connects SNAP-eligible families with fresh produce at Healthy Corners stores using voice input, Groq Whisper for speech-to-text, and Llama 3.3 70B for multilingual meal planning in 99+ languages.</p>
+                        <p class="project-desc">Top 3 of 35 teams at George Hacks × UN Reboot the Earth. Multilingual voice-first app connecting 75,000+ DC SNAP residents to real-time corner store inventory — Whisper auto-detects language, LLaMA 3.3 70B responds in kind, and XGBoost grades products A–D via USDA data.</p>
                         <div class="project-tags">
                             <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Groq</span><span class="tag">LLaMA</span><span class="tag">Supabase</span><span class="tag">Leaflet</span>
                         </div>
@@ -568,82 +574,82 @@
                     <h3>ML & LLM Frameworks</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-info"><span>Scikit-learn / XGBoost</span><span>90%</span></div>
+                            <div class="skill-info"><span>Scikit-learn / XGBoost / PyTorch</span><span>90%</span></div>
                             <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>AutoGen / LangGraph</span><span>85%</span></div>
+                            <div class="skill-info"><span>LangChain / LlamaIndex / RAG</span><span>88%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>AutoGen / LangGraph / MCP</span><span>85%</span></div>
                             <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>LangChain / CrewAI</span><span>80%</span></div>
-                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>TensorFlow / PyTorch</span><span>75%</span></div>
-                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                            <div class="skill-info"><span>MLflow / Prompt Engineering</span><span>82%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
                         </div>
                     </div>
                 </div>
                 <div class="skill-category-card">
                     <div class="skill-cat-icon"><i class="fas fa-chart-pie"></i></div>
-                    <h3>Data & Visualization</h3>
+                    <h3>Analytics & Visualization</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-info"><span>Pandas / NumPy / Seaborn</span><span>92%</span></div>
+                            <div class="skill-info"><span>Tableau / Power BI / Looker / QuickSight</span><span>88%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Pandas / NumPy / Excel (Advanced)</span><span>92%</span></div>
                             <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>Tableau / Power BI</span><span>85%</span></div>
-                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                            <div class="skill-info"><span>A/B Testing / Causal Inference</span><span>82%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>QuickSight / Excel</span><span>85%</span></div>
-                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>A/B Testing</span><span>80%</span></div>
+                            <div class="skill-info"><span>Recommendation Systems / Behavioral Analytics</span><span>80%</span></div>
                             <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
                         </div>
                     </div>
                 </div>
                 <div class="skill-category-card">
                     <div class="skill-cat-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud & Big Data</h3>
+                    <h3>Cloud & Data Engineering</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-info"><span>AWS (Glue, Redshift, S3, Athena)</span><span>85%</span></div>
+                            <div class="skill-info"><span>AWS (Glue, Redshift, Athena, S3, Bedrock)</span><span>85%</span></div>
                             <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Azure Data Factory / ADLS Gen2</span><span>82%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info"><span>Databricks / Apache Spark</span><span>82%</span></div>
                             <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>GCP (BigQuery, Cloud Functions)</span><span>75%</span></div>
-                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info"><span>Airflow / dbt / Snowflake</span><span>75%</span></div>
-                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                            <div class="skill-info"><span>Airflow / dbt / Snowflake</span><span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
                         </div>
                     </div>
                 </div>
                 <div class="skill-category-card">
                     <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
-                    <h3>Databases</h3>
+                    <h3>Databases & Vector Stores</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-info"><span>Redshift / MySQL</span><span>88%</span></div>
+                            <div class="skill-info"><span>Snowflake / Redshift / MySQL</span><span>88%</span></div>
                             <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>MongoDB</span><span>78%</span></div>
+                            <div class="skill-info"><span>MongoDB / Neo4j</span><span>78%</span></div>
                             <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-info"><span>Snowflake</span><span>75%</span></div>
-                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                            <div class="skill-info"><span>FAISS / ChromaDB</span><span>82%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
                         </div>
                     </div>
                 </div>
@@ -672,29 +678,35 @@
                 <span class="tech-badge">⚡ PySpark</span>
                 <span class="tech-badge">📊 R</span>
                 <span class="tech-badge">📋 SAS</span>
-                <span class="tech-badge">🤖 AutoGen</span>
-                <span class="tech-badge">🔗 LangGraph</span>
-                <span class="tech-badge">🦜 LangChain</span>
-                <span class="tech-badge">👥 CrewAI</span>
                 <span class="tech-badge">🧠 Scikit-learn</span>
                 <span class="tech-badge">🔥 XGBoost</span>
-                <span class="tech-badge">🧬 TensorFlow</span>
                 <span class="tech-badge">🔦 PyTorch</span>
+                <span class="tech-badge">📊 MLflow</span>
+                <span class="tech-badge">🦜 LangChain</span>
+                <span class="tech-badge">🦙 LlamaIndex</span>
+                <span class="tech-badge">🔗 LangGraph</span>
+                <span class="tech-badge">🤖 AutoGen</span>
+                <span class="tech-badge">🔍 RAG</span>
+                <span class="tech-badge">🔌 MCP</span>
+                <span class="tech-badge"><i class="fab fa-aws"></i> AWS</span>
+                <span class="tech-badge">☁️ Azure Data Factory</span>
+                <span class="tech-badge">🗄️ ADLS Gen2</span>
+                <span class="tech-badge">🧱 Databricks</span>
+                <span class="tech-badge">❄️ Snowflake</span>
+                <span class="tech-badge">🌀 Airflow</span>
+                <span class="tech-badge">🔄 dbt</span>
                 <span class="tech-badge">🐼 Pandas</span>
                 <span class="tech-badge">🔢 NumPy</span>
                 <span class="tech-badge">📈 Tableau</span>
                 <span class="tech-badge">📉 Power BI</span>
+                <span class="tech-badge">🔭 Looker</span>
                 <span class="tech-badge">📊 QuickSight</span>
-                <span class="tech-badge"><i class="fab fa-aws"></i> AWS</span>
-                <span class="tech-badge">🧱 Databricks</span>
-                <span class="tech-badge">☁️ GCP</span>
-                <span class="tech-badge">❄️ Snowflake</span>
-                <span class="tech-badge">🌀 Airflow</span>
-                <span class="tech-badge">🔄 dbt</span>
                 <span class="tech-badge">🍃 MongoDB</span>
+                <span class="tech-badge">🕸️ Neo4j</span>
+                <span class="tech-badge">🔎 FAISS</span>
+                <span class="tech-badge">🟣 ChromaDB</span>
                 <span class="tech-badge"><i class="fab fa-docker"></i> Docker</span>
                 <span class="tech-badge"><i class="fab fa-git-alt"></i> Git</span>
-                <span class="tech-badge">🦙 LLaMA</span>
                 <span class="tech-badge">🐦 Flask</span>
             </div>
         </div>
