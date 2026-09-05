@@ -36,7 +36,7 @@ function updateActiveNav() {
 }
 
 /* ===== TYPING ANIMATION ===== */
-const titles = ['Data Scientist', 'ML Engineer', 'AI Developer', 'Data Analyst', 'LLM Builder'];
+const titles = ['Data Scientist', 'GenAI Engineer', 'ML Engineer', 'RAG Builder', 'Applied ML Practitioner'];
 let titleIndex = 0, charIndex = 0, isDeleting = false;
 const typingEl = document.getElementById('typingText');
 
@@ -230,17 +230,17 @@ function getResponse(input) {
 
     // About
     if (/about|who is|who are|introduce|background|journey|tell me/i.test(q)) {
-        return `<strong>Darsini Lakshmiah</strong> is a Data Scientist & ML Engineer pursuing her <strong>M.S. in Data Science at George Washington University</strong> (graduating May 2026).<br><br>
+        return `<strong>Darsini Lakshmiah</strong> is a Data Scientist with 4+ years of experience building AI/ML systems, pursuing her <strong>M.S. in Data Science at George Washington University</strong> (graduating May 2026).<br><br>
         Her interest in data started with a Mathematics background, giving her a strong foundation in analytical thinking. She has since worked with real-world data at:<br>
-        🟠 <strong>Amazon</strong> — BI Engineer Intern<br>
-        🟣 <strong>AARP Services</strong> — Data Scientist Intern<br>
-        🏦 <strong>NatWest Group</strong> — Senior Data Analyst<br><br>
+        🟣 <strong>AARP</strong> — Data Scientist, Generative AI<br>
+        🟠 <strong>Amazon</strong> — Data Scientist, Data & Analytics<br>
+        🏦 <strong>NatWest Group</strong> — Machine Learning Engineer<br><br>
         She specializes in:<br>
-        🧠 Machine Learning & NLP<br>
-        🤖 AI Agents & LLM-powered apps<br>
+        🤖 Generative AI, RAG & LLM Evaluation<br>
+        🧠 Applied ML & Production Model Monitoring<br>
         📊 Data Visualization (Tableau, Power BI)<br>
         ☁️ Cloud (AWS, Databricks, Azure)<br><br>
-        She's actively seeking Data Scientist roles to grow and contribute to innovative teams!`;
+        She's actively seeking Data Scientist / GenAI roles to grow and contribute to innovative teams!`;
     }
 
     // All projects
@@ -261,15 +261,26 @@ function getResponse(input) {
         Use the filter buttons on the page to explore by category!`;
     }
 
-    // Interview Evaluation System
+    // AI Interview Coach
     if (/interview/i.test(q)) {
-        return `🎤 <strong>Interview Evaluation System</strong><br><br>
-        An AI-powered interview coaching platform that:<br>
-        • Simulates company-specific interviews<br>
+        return `🎤 <strong>AI Interview Coach</strong><br><br>
+        A real-time multi-agent interview application that:<br>
+        • Coordinates interviewer, evaluator, and candidate agents for company-specific mock interviews<br>
+        • Uses live Whisper transcription and WebSocket communication<br>
         • Analyzes body language via webcam in real-time<br>
         • Provides performance feedback using <strong>GPT-4o</strong><br>
         • Built with <strong>Microsoft AutoGen</strong> multi-agent framework & FastAPI<br><br>
         <a href="https://github.com/DarsiniLakshmiah/Interview-evaluation-system" target="_blank">🔗 View on GitHub</a>`;
+    }
+
+    // NutriNav
+    if (/nutrinav|nutrition|snap|food access/i.test(q)) {
+        return `🥕 <strong>NutriNav — Voice-First Food Access Intelligence</strong><br><br>
+        • Placed Top 3 of 35 teams at George Hacks × UN Reboot the Earth<br>
+        • Multilingual, voice-first AI app connecting 75,000+ DC SNAP residents to real-time corner-store inventory<br>
+        • USDA-based nutrition scoring via <strong>XGBoost</strong><br>
+        • Built with <strong>Groq Whisper, FastAPI, Supabase</strong><br><br>
+        <a href="https://github.com/DarsiniLakshmiah/NutriNav" target="_blank">🔗 View on GitHub</a>`;
     }
 
     // Holiday Management Agent
@@ -410,27 +421,28 @@ function getResponse(input) {
     if (/skill|tech|stack|tool|language|program|python|sql|pyspark|sas|tableau|power bi|aws|docker|pandas|numpy|scikit|ml|machine learn|langgraph|langchain|crewai|autogen|databricks|snowflake|airflow|dbt|mongodb/i.test(q)) {
         return `💻 <strong>Darsini's Tech Stack:</strong><br><br>
         <strong>Programming:</strong> Python · SQL · PySpark · R · SAS<br>
-        <strong>ML & LLM:</strong> Scikit-learn · XGBoost · TensorFlow · PyTorch · AutoGen · LangGraph · LangChain · CrewAI<br>
+        <strong>GenAI & RAG:</strong> RAG · Llama · GPT-4o · LangChain · AutoGen · Embeddings · ChromaDB · Hybrid BM25/Vector Retrieval · Reranking · Prompt Engineering · MLflow<br>
+        <strong>ML:</strong> Scikit-learn · XGBoost · LightGBM · PyTorch · TensorFlow<br>
         <strong>Data & Viz:</strong> Pandas · NumPy · Seaborn · Tableau · Power BI · QuickSight · Excel · A/B Testing<br>
-        <strong>Cloud:</strong> AWS (Glue, Redshift, S3, Athena, Lambda, Bedrock) · GCP (BigQuery) · Databricks<br>
-        <strong>Databases:</strong> Redshift · MySQL · MongoDB · Snowflake<br>
-        <strong>DevOps & Tools:</strong> Git · Docker · Flask · Airflow · dbt · Jira · Confluence`;
+        <strong>Cloud:</strong> AWS (Bedrock, SageMaker, Lambda, Glue, S3, Redshift, Athena) · Databricks · Azure Data Factory · ADLS Gen2<br>
+        <strong>Databases:</strong> Snowflake · Redshift · MySQL · MongoDB<br>
+        <strong>DevOps & Tools:</strong> Git · Docker · FastAPI · Flask · Airflow · dbt`;
     }
 
     // Experience
     if (/experience|work|job|company|career|profession|intern|employ|aarp|amazon|natwest|gwu|george washington/i.test(q)) {
         return `💼 <strong>Work Experience</strong><br><br>
-        🟣 <strong>AARP Services Inc.</strong> — Data Scientist Intern (Sep 2025–Present)<br>
-        &nbsp;&nbsp;Automated 30+ campaigns, built LightGBM recommender (+10% engagement), LLaMA analytics assistant (-50% turnaround)<br><br>
-        🟠 <strong>Amazon</strong> — BI Engineer Intern (May–Aug 2025)<br>
-        &nbsp;&nbsp;$200M grocery analytics platform, SageMaker propensity model, ETL pipelines reducing latency by ~20%<br><br>
+        🟣 <strong>AARP</strong> — Data Scientist, Generative AI (Sep 2025–Mar 2026)<br>
+        &nbsp;&nbsp;RAG marketing intelligence assistant, Dockerized REST API, MLflow eval framework (+15% retrieval recall), LightGBM propensity model across 20M+ interactions<br><br>
+        🟠 <strong>Amazon</strong> — Data Scientist, Data & Analytics (May–Aug 2025)<br>
+        &nbsp;&nbsp;ML-ready customer data foundation from 87M+ transactions, cohort/DiD measurement pipelines, standardized 15+ KPI definitions<br><br>
         🔵 <strong>George Washington University</strong> — Graduate Assistant (Oct 2024–May 2025)<br>
         &nbsp;&nbsp;Taught NLP, built ArcGIS dashboards for NGOs<br><br>
-        🏦 <strong>NatWest Group</strong> — Senior Data Analyst (Aug 2021–Jun 2024)<br>
-        &nbsp;&nbsp;1.5M+ daily transactions, AML/fraud detection, A/B testing (+9% engagement)<br><br>
+        🏦 <strong>NatWest Group</strong> — Machine Learning Engineer (Aug 2021–Jun 2024)<br>
+        &nbsp;&nbsp;Fraud detection (XGBoost/TF-IDF) on 1.5M+ daily transactions, MLflow monitoring for 30+ models, -20% drift incidents<br><br>
         🌱 <strong>Hamari Pahchan NGO</strong> — R&D Intern (Jun–Sep 2020)<br>
         &nbsp;&nbsp;Power BI dashboards, expanded outreach by 30%<br><br>
-        <a href="DARSINI LAKSHMIA1.pdf" download>📄 Download full resume</a>`;
+        <a href="Darsini_Lakshmiah_.pdf" download>📄 Download full resume</a>`;
     }
 
     // Contact
@@ -473,16 +485,12 @@ function getResponse(input) {
     }
 
     // Certifications
-    if (/certif|credential|course|certification|aws|azure|redhat|hackerrank|ibm|datacamp|sql cert/i.test(q)) {
+    if (/certif|credential|course|certification|aws|azure|databricks|microsoft/i.test(q)) {
         return `🏆 <strong>Certifications</strong><br><br>
-        🔴 Red Hat System Administration I — <em>Red Hat, Oct 2025</em><br>
-        ☁️ AWS Academy Cloud Foundations — <em>AWS, Sep 2025</em><br>
-        🛢️ Advanced SQL Skill Badge — <em>HackerRank, Dec 2024</em><br>
-        🔬 Data Science Professional Certificate — <em>IBM, Jun 2024</em><br>
-        🧠 Supervised Learning with Scikit-learn — <em>DataCamp, May 2024</em><br>
-        💠 Microsoft Azure Fundamentals — <em>DataCamp, Jun 2024</em><br>
-        📊 Data Analytics 1: Foundation — <em>NASBA, May 2024</em><br>
-        🔄 Agile Methodology — <em>NatWest Group, Jul 2023</em>`;
+        🧱 Databricks Certified Generative AI Engineer<br>
+        ☁️ AWS Certified AI Practitioner<br>
+        💠 Microsoft Certified: Machine Learning Operations Engineer<br>
+        📊 Microsoft Certified: Fabric Analytics Engineer`;
     }
 
     // Hire / job
